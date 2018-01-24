@@ -1,12 +1,14 @@
 package com.prajwal.dagger2
 
 import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
+import com.prajwal.dagger2.component.MainComponent
+import javax.inject.Inject
+
+/**
+ * Created by prajwal on 1/24/18.
+ */
 
 class MainActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
+    @Inject
+    private lateinit var MainComponent
 }
